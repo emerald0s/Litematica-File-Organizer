@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Litematica File Organizer",
+  "version": "1.0.0",
+  "description": "A firefox extension that automatically sorts .litematic files into a spesifed subfolder",
+  "homepage_url": "https://github.com/emerald0s/litematica-file-organizer",
+  "author": "emerald0s",
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "litematica-file-organizer@emeral0s",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
