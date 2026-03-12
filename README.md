@@ -25,7 +25,7 @@ what this extension does is that it detects all .`litematic` downloads and moves
 ---
 This extension is not currently on the Firefox Add-on Store. You can install it by following the steps below.
 
-## Standard Installation 
+## Standard Installation
 
 Use this if you are happy with the default directory being `~/Downloads/schematics/`
 
