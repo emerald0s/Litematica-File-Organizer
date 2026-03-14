@@ -1,19 +1,9 @@
-# ⚠️ Critical Bug Notice
-
-**The current published release contains a fatal bug that breaks the extension.**
-
-**Please wait for a fix**
-
-Status: Waiting on Mozilla signature.
-
-
-
-# Litematica File Organizer 
+# Litematica File Organizer
 ### Note that this extension works only on firefox based browsers if you are looking for the Chromium browsers version (Chrome, Edge, Brave etc...) [Check this repo](https://github.com/MCodex-org/litematic-organizer)
 
 #### A firefox extension that automatically sorts `.litematic` files into a specified subfolder.
 
-While this guide specifically mentions Firefox, this extension is compatible with any firefox based browsers such as  zen and librewolf. 
+While this guide specifically mentions Firefox, this extension is compatible with any firefox based browsers such as  zen and librewolf.
 
 # 🚀 Usage
 
