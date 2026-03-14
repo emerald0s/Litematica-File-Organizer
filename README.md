@@ -1,3 +1,13 @@
+# ⚠️ Critical Bug Notice
+
+**The current published release contains a fatal bug that breaks the extension.**
+
+**Please wait for a fix**
+
+Status: Waiting on Mozilla signature.
+
+
+
 # Litematica File Organizer 
 ### Note that this extension works only on firefox based browsers if you are looking for the Chromium browsers version (Chrome, Edge, Brave etc...) [Check this repo](https://github.com/MCodex-org/litematic-organizer)
 
