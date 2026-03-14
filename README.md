@@ -68,11 +68,20 @@ it is also recommended to check if there is any folder in `~/Downloads` named **
 
 ## ⚙️ How It Works
 
-The Litematic File Organizer functions as an automated traffic controller for Firefox's download manager. When a download is initiated, the extension intercepts the request to analyze the file type. if it matches a targeted format like .litematic by default, the extension immediately cancels the original download. then automatically triggers a new download request for the same file, but redirected into your specified subfolder. This "cancel and restart" approach is necessary because Firefox has strict security rules that prevent extensions from simply moving a file while it is already in progress. By starting a fresh request, the extension can bypass these limits and ensure your files land exactly where they belong.
+The Litematic File Organizer functions as an automated traffic controller for your browser's download manager. When a download is initiated, the extension intercepts the request to analyze the file type. If it matches a targeted format such as `.litematic` with the default configuration, the extension executes a "Catch or Cleanup" protocol to ensure the file is organized correctly:
+
+1. Interception: The extension attempts to immediately cancel the original download and trigger a fresh request redirected into your specified subfolder.
+
+
+2. Cleanup Fallback: Because Firefox-based browsers prioritize speed and may complete a download before the "cancel" command arrives, the extension includes a failsafe. If a file finishes too quickly or the extension was idle, the script simply routes a second copy to the correct folder and then removes the extra copy from your main Downloads folder.
+
 
 ---
 ## ⚠️ Known Limitations
-This extension is subject to the security and performance boundaries of Firefox. Due to security reasons, the extension is strictly limited to the `~Downloads` directory and cannot natively save files to external locations like your `.minecraft` folder. Users should also be aware that "single-use" download links may fail, as the server's security tokens may block the extension’s second attempt to route the file. Additionally, if a download is exceptionally small or your connection is very fast, a "race condition" can occur where the browser completes the initial download before the cancellation triggers, occasionally resulting in a duplicate copy in both your main folder and your targeted subfolder.
+1. **Directory Restrictions:** Due to Firefox based browsers security limitations, the extension is strictly limited to the `~/Downloads` directory and cannot save files to external locations like your `.minecraft` folder.
+
+
+2. **Single-Use Links:** Users should be aware that "single-use" download links (such as some Discord attachments) may fail. Because these servers only allow a file to be requested once, they may block the extension’s second attempt to route the file. In these cases, the extension is designed to **preserve the original file** in your Downloads folder to prevent any data loss.
 
 # Support
 #### if you encounter any problems you can either [submit an issue through GitHub](https://github.com/emerald0s/Litematica-File-Organizer/issues) or contact me through discord: emerald0s
